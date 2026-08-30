@@ -194,6 +194,55 @@
   .foot-links a{color:var(--text-dim); font-size:13px; transition:color .2s;}
   .foot-links a:hover{color:var(--accent);}
 
+
+
+  /* ALWAYS-VISIBLE CERTIFICATE PREVIEWS */
+  .cert-preview-frame{
+    width:100%;
+    height:260px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+    margin-top:2px;
+  }
+
+  .cert-preview-frame iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+    background:#fff;
+  }
+
+  .cert-btn{
+    align-self:flex-start;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    font-size:13px;
+    color:var(--accent);
+    border:1px solid #4a3d24;
+    background:var(--accent-soft);
+    padding:7px 13px;
+    border-radius:6px;
+    font-weight:600;
+    transition:all .2s;
+    text-decoration:none;
+  }
+
+  .cert-btn:hover{
+    border-color:var(--accent);
+    transform:translateY(-1px);
+  }
+
+  @media (max-width:600px){
+    .cert-preview-frame{
+      height:230px;
+    }
+  }
+
   @media (max-width: 800px){
     .wrap{padding:0 18px;}
 
@@ -449,7 +498,7 @@
       <a href="#education" class="hide-mobile">Education</a>
       <a href="#certifications" class="hide-mobile">Certifications</a>
       <a href="https://github.com/gargdivyam21-hub" target="_blank" rel="noopener">GitHub</a>
-      <a href="#resume" class="nav-cta">Resume</a>
+      <a href="Resume_Divyam_Garg.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a>
     </div>
   </div>
 </nav>
@@ -466,7 +515,7 @@
       </div>
       <div class="btn-row">
         <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="Resume_Divyam_Garg.pdf" download class="btn btn-ghost">Download Resume ↓</a>
+        <a href="Resume_Divyam_Garg.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↓</a>
         <a href="https://github.com/gargdivyam21-hub" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
       </div>
     </div>
@@ -699,7 +748,11 @@
           </div>
         </div>
         <div class="cert-date">150 hrs · 18 Jan 2026 – 20 May 2026</div>
-        <a href="C%20programming%20neocolab.pdf" download class="cert-dl">Download ↓</a>
+        <div class="cert-preview-frame">
+  <iframe src="C%20programming%20neocolab.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    title="Computer Programming certificate preview" loading="lazy"></iframe>
+</div>
+<a href="C%20programming%20neocolab.pdf" download class="cert-btn cert-download">↓ Download Certificate</a>
       </div>
 
       <div class="cert-card">
@@ -710,7 +763,11 @@
           </div>
         </div>
         <div class="cert-date">Issued 9 Mar 2026</div>
-        <a href="Infosys%20artificial%20intelligence.pdf" download class="cert-dl">Download ↓</a>
+        <div class="cert-preview-frame">
+  <iframe src="Infosys%20artificial%20intelligence.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    title="Introduction to Artificial Intelligence certificate preview" loading="lazy"></iframe>
+</div>
+<a href="Infosys%20artificial%20intelligence.pdf" download class="cert-btn cert-download">↓ Download Certificate</a>
       </div>
 
       <div class="cert-card">
@@ -721,7 +778,11 @@
           </div>
         </div>
         <div class="cert-date">Issued 29 May 2026</div>
-        <a href="Infosys%20Python%201.pdf" download class="cert-dl">Download ↓</a>
+        <div class="cert-preview-frame">
+  <iframe src="Infosys%20Python%201.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    title="Python Fundamentals — Part 1 certificate preview" loading="lazy"></iframe>
+</div>
+<a href="Infosys%20Python%201.pdf" download class="cert-btn cert-download">↓ Download Certificate</a>
       </div>
 
       <div class="cert-card">
@@ -732,7 +793,11 @@
           </div>
         </div>
         <div class="cert-date">Issued 29 May 2026</div>
-        <a href="Infosys%20Python%202.pdf" download class="cert-dl">Download ↓</a>
+        <div class="cert-preview-frame">
+  <iframe src="Infosys%20Python%202.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    title="Python Fundamentals — Part 2 certificate preview" loading="lazy"></iframe>
+</div>
+<a href="Infosys%20Python%202.pdf" download class="cert-btn cert-download">↓ Download Certificate</a>
       </div>
 
       <div class="cert-card">
@@ -743,19 +808,14 @@
           </div>
         </div>
         <div class="cert-date">Issued 30 May 2026</div>
-        <a href="oracle%20DBMS%20Certificate.pdf" download class="cert-dl">Download ↓</a>
+        <div class="cert-preview-frame">
+  <iframe src="oracle%20DBMS%20Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0"
+    title="Oracle Certified Foundations Associate certificate preview" loading="lazy"></iframe>
+</div>
+<a href="oracle%20DBMS%20Certificate.pdf" download class="cert-btn cert-download">↓ Download Certificate</a>
       </div>
 
-      <div class="cert-card">
-        <div class="cert-top">
-          <div>
-            <div class="cert-issuer">Times Foundation × LPU</div>
-            <h3>Community Development Project</h3>
-          </div>
-        </div>
-        <div class="cert-date">Certificate of Completion</div>
-        <a href="Time_of_india_certificate.pdf" download class="cert-dl">Download ↓</a>
-      </div>
+      
 
     </div>
   </div>
@@ -769,9 +829,9 @@
     <div class="resume-card">
       <h2>Everything on this site, condensed to one page.</h2>
       <p>B.Tech CSE (AI &amp; ML) student, 9.33 CGPA, building a foundation in Python and data
-      tooling toward machine learning systems. Download the PDF for the full breakdown of
+      tooling toward machine learning systems. Open the PDF to view the full breakdown of
       projects, skills, and education.</p>
-      <a href="Resume_Divyam_Garg.pdf" download class="btn btn-primary">Download Resume ↓</a>
+      <a href="Resume_Divyam_Garg.pdf" target="_blank" rel="noopener" class="btn btn-primary">Resume ↓</a>
 
       <div style="margin-top:32px;">
         <div class="resume-row">
@@ -809,7 +869,7 @@
       <div class="contact-links">
         <a href="mailto:gargdivyam21@gmail.com" class="btn btn-primary">Email Me</a>
         <a href="https://github.com/gargdivyam21-hub" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
-        <a href="Resume_Divyam_Garg.pdf" download class="btn btn-ghost">Resume ↓</a>
+        <a href="Resume_Divyam_Garg.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↓</a>
       </div>
     </div>
   </div>
