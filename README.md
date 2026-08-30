@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Divyam Garg**, a B.Tech CSE (AI & ML) student at Lovely Professional University, showcasing skills, projects, certifications, and resume.
 
-🔗 **Live site:** [gargdivyam21-hub.github.io](https://gargdivyam21-hub.github.io)
+🔗 **Live site:** [gargdivyam21-hub.github.io/Portfolio-/](https://gargdivyam21-hub.github.io/Portfolio-/)
 
 ## About
 
