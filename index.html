@@ -195,15 +195,182 @@
   .foot-links a:hover{color:var(--accent);}
 
   @media (max-width: 800px){
-    .hero-grid{grid-template-columns:1fr;}
-    .skill-cols{grid-template-columns:1fr 1fr;}
-    .project-card{grid-template-columns:1fr;}
-    .project-side{border-right:none; border-bottom:1px solid var(--line);}
-    .hero h1{font-size:34px;}
-    .nav-links{gap:16px;}
-    .nav-links span.hide-mobile{display:none;}
-    .contact-box{flex-direction:column; align-items:flex-start;}
-    .cert-grid{grid-template-columns:1fr;}
+    .wrap{padding:0 18px;}
+
+    nav .wrap{
+      height:auto;
+      min-height:58px;
+      padding-top:10px;
+      padding-bottom:10px;
+      gap:10px;
+    }
+    .nav-brand{font-size:13px;}
+    .nav-links{
+      gap:8px;
+      font-size:12px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav-links a{
+      padding:5px 7px;
+    }
+    .nav-links .hide-mobile{display:none;}
+    .nav-cta{padding:6px 9px !important;}
+
+    .hero{
+      padding:64px 0 48px;
+    }
+    .hero-grid{
+      grid-template-columns:1fr;
+      gap:30px;
+    }
+    .hero h1{
+      font-size:clamp(32px, 9vw, 42px);
+      line-height:1.1;
+      margin-bottom:16px;
+    }
+    .hero p.lede{
+      font-size:15px;
+      line-height:1.65;
+    }
+    .stat-row{
+      gap:8px;
+      margin-bottom:24px;
+    }
+    .stat-chip{
+      padding:7px 11px;
+      font-size:11.5px;
+    }
+    .btn-row{
+      flex-direction:column;
+      width:100%;
+    }
+    .btn-row .btn{
+      width:100%;
+      justify-content:center;
+    }
+
+    .terminal{
+      width:100%;
+    }
+    .term-body{
+      padding:18px 15px;
+      font-size:11.5px;
+      min-height:205px;
+      overflow-x:auto;
+    }
+
+    section{padding:52px 0;}
+    .section-head{margin-bottom:26px;}
+    .section-head h2{font-size:24px;}
+    .section-num{font-size:11.5px;}
+
+    .skill-cols{
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .skill-card{padding:18px;}
+
+    .project-list{gap:14px;}
+    .project-card{
+      grid-template-columns:1fr;
+    }
+    .project-side{
+      border-right:none;
+      border-bottom:1px solid var(--line);
+      padding:20px;
+    }
+    .project-main{
+      padding:20px;
+    }
+    .project-side h3{font-size:18px;}
+    .project-main p{font-size:14px;}
+    .feat-list li{
+      font-size:13.5px;
+      line-height:1.5;
+    }
+
+    .edu-item{
+      display:block;
+      padding:16px 0;
+    }
+    .edu-item h3{font-size:15px;}
+    .edu-item .edu-sub{
+      font-size:12.5px;
+      line-height:1.5;
+    }
+    .edu-item .edu-grade{
+      display:inline-block;
+      margin-top:8px;
+    }
+
+    .cert-grid{
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .cert-card{padding:18px;}
+    .cert-card h3{font-size:15px;}
+    .cert-top{display:block;}
+    .cert-date{font-size:11.5px;}
+
+    .resume-card{
+      padding:24px 18px;
+      max-width:none;
+    }
+    .resume-card h2{font-size:25px;}
+    .resume-card > p{font-size:14px;}
+    .resume-row{
+      display:block;
+      padding:14px 0;
+    }
+    .resume-row .r-label{
+      display:block;
+      width:auto;
+      margin-bottom:5px;
+    }
+    .resume-row .r-value{
+      text-align:left;
+      font-size:13.5px;
+      line-height:1.55;
+    }
+
+    .contact-box{
+      flex-direction:column;
+      align-items:stretch;
+      padding:24px 18px;
+    }
+    .contact-links{
+      flex-direction:column;
+      width:100%;
+    }
+    .contact-links .btn{
+      width:100%;
+      justify-content:center;
+    }
+
+    footer{
+      padding:30px 0 36px;
+    }
+    .footer-grid{
+      flex-direction:column;
+      align-items:flex-start;
+    }
+    .foot-links{
+      gap:14px;
+      flex-wrap:wrap;
+    }
+  }
+
+  @media (max-width: 420px){
+    .wrap{padding:0 15px;}
+    .nav-brand{font-size:12px;}
+    .nav-links{gap:4px;}
+    .nav-links a{padding:4px 5px;}
+    .hero{padding-top:48px;}
+    .hero h1{font-size:31px;}
+    .hero p.lede{font-size:14px;}
+    .terminal .term-body{font-size:10.5px;}
+    .resume-card h2{font-size:23px;}
   }
   @media (prefers-reduced-motion: reduce){
     .cursor{animation:none; opacity:1;}
